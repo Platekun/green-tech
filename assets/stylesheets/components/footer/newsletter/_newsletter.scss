@@ -1,0 +1,54 @@
+#newsletter-offer {
+    font-size: 0.7em;
+    line-height: 2;
+    color: $text-color-secondary;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#newsletter {
+    padding-top: 1em;
+    h2+p {
+        margin-bottom: 0;
+        font-size: 1.2em;
+        text-align: center;
+        color: white;
+        @include oswald-style();
+    }
+    form {
+        position: relative;
+        width: 60%;
+        max-width: 300px;
+        margin: 0 auto;
+        border: 1px solid $text-color-secondary;
+        background-color: $text-color-primary-dark;
+        border-radius: 5px;
+        fieldset {
+            width: 100%;
+        }
+        input[type="email"] {
+            width: 72%;
+            padding-top: 0.75em;
+            padding-bottom: 0.75em;
+            padding-left: 1em;
+            border: none;
+            font-style: italic;
+            font-weight: lighter;
+            background-color: $transparent;
+            color: $text-color-secondary;
+            outline: none;
+        }
+        button {
+            position: absolute;
+            @include vertically-centered();
+            top: 50%;
+            right: 2%;
+            border: none;
+            background-color: $transparent;
+        }
+        .fa-paper-plane {
+            color: $text-color-secondary;
+            transition: ease all 0.5s;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include oswald-style();
+}
+
+main {
+  margin-top: 6em;
+}
+
+footer {
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  &:link,
+  &:hover,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+q {
+  line-height: 2;
+  color: $text-color-secondary;
+  @include open-sans();
+}

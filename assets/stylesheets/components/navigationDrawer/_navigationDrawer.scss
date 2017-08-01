@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navigation-drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 10;
+    width: 270px;
+    margin-top: 6em; //Quitar luego?
+    padding-top: 2em;
+    margin-left: -100%;
+    background: #333;
+    @include open-sans();
+    overflow-y: scroll;
+    transition: ease all 0.5s;
+    a,
+    a:link,
+    a:visited,
+    a:hover {
+        text-decoration: none;
+        color: $text-color-primary-light;
+        font-weight: lighter;
+    }
+    form {
+        width: 90%;
+        max-width: 300px;
+        border: 1px solid $text-color-secondary;
+        background-color: $text-color-primary-light;
+        .fa-search {
+            color: $text-color-secondary;
+        }
+    }
+}
+
+.navigation-drawer-list {
+    li {
+        padding: 1em 2em;
+        transition: ease all 0.3s;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+}
+
+.navigation-drawer-dropdown {
+    li {
+        padding: 1em 2em 1em 3em;
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+}

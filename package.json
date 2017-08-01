@@ -1,0 +1,14 @@
+{
+  "name": "green-tech",
+  "version": "1.0.0",
+  "description": "We sell solar panels",
+  "scripts": {
+    "sass": "sass --watch ./assets/stylesheets/author.scss:./assets/stylesheets/author.css"
+  },
+  "author": "Carlos Camilo Lobo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Platekun/green-tech-replica.git"
+  }
+}

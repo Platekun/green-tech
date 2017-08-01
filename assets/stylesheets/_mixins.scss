@@ -1,0 +1,35 @@
+@mixin fully-centered() {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  /* IE 9 */
+  transform: translate(-50%, -50%);
+  /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+@mixin vertically-centered() {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  /* IE 9 */
+  transform: translateY(-50%);
+  /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+@mixin open-sans() {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+@mixin oswald-style() {
+  font-family: Oswald, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin green-tech-style() {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  @include oswald-style();
+}

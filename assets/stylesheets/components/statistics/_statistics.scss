@@ -1,0 +1,16 @@
+#statistics {
+    height: 100vh;
+    padding-top: 4em;
+    padding-bottom: 7em;
+    background-image: url("https://livedemo00.template-help.com/wt_60074/images/parallax-02.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    @include open-sans();
+    color: $text-color-primary-light;
+    text-align: center;
+}
+
+#dedication {
+    @include oswald-style();
+    font-size: 2em;
+}

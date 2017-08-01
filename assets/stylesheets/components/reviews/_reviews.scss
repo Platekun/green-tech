@@ -1,0 +1,93 @@
+#reviews {
+    padding-top: 3em;
+    h2 {
+        @include green-tech-style();
+        text-align: center;
+        width: auto;
+    }
+    img {
+        border-radius: 50%;
+    }
+    cite {
+        font-style: normal;
+    }
+}
+
+.review-list {
+    ul {
+        border-top: 1px solid $text-color-secondary;
+        li {
+            line-height: 2;
+        }
+    }
+}
+
+.featured-review {
+    text-align: center;
+    margin: 4em 0;
+}
+
+.reviewer-profile {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.75em;
+    color: $text-color-secondary;
+}
+
+.reviewer-info,
+.reviewer-photo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.reviewer-photo {
+    width: 70px;
+}
+
+.reviewer-info {
+    width: 65%;
+    margin-left: 5px;
+}
+
+.reviewer-name {
+    font-size: 0.75em;
+    margin: 0;
+    @include open-sans();
+    text-transform: uppercase;
+}
+
+.reviewer-quote {
+    padding: 20px 20px 30px;
+    font-size: 0.8em;
+    @include open-sans();
+    text-indent: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+@media screen and(min-width:770px) {
+    #reviews {
+        ul {
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+        }
+    }
+}
+
+@media screen and(min-width: 993px) {
+    #reviews {
+        ul {
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+        }
+    }
+}

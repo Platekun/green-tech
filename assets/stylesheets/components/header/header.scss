@@ -1,0 +1,86 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 15;
+    font-size: 1rem;
+    box-shadow: 0 0 9px $text-color-secondary;
+    background-color: white;
+    padding-left: 1em;
+
+    h1 {
+        display: inline-block;
+        margin-left: 1em;
+    }
+}
+
+.logo-text-1 {
+    fill: $color-primary;
+}
+
+.logo-text-2 {
+    fill: $text-color-primary-dark;
+}
+
+#hamburguerMenu {
+    cursor: pointer;
+
+    transition: ease all 0.5s;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+#contact {
+    display: none;
+}
+
+@media screen and (min-width:770px) {
+    .main-header {
+        .social-media-item {
+            background: $color-primary;
+
+            &:hover {
+                background: white;
+                box-shadow: inset 0 0 1px 2px $color-primary;
+            }
+
+            &:hover .fa {
+                color: $color-primary;
+            }
+        }
+    }
+
+    #contact {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        width: 25em;
+
+        display: block;
+    }
+
+    #call-us {
+        display: inline-block;
+        width: 8em;
+        text-align: center;
+
+        a, a:link, a:visited {
+            color: white;
+        }
+
+        &:hover a {
+            color: $color-primary;
+        }
+
+        &:hover {
+            background-color: $transparent;
+        }
+    }
+
+    .social-media {
+        display: inline-block;
+    }
+}

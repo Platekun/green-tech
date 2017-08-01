@@ -1,0 +1,112 @@
+.presentational-text {
+  color: $color-primary;
+}
+
+.section-header {
+  font-size: 2em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 25px;
+  font-size: 0.8em;
+  padding: 1em 2em;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  text-transform: uppercase;
+}
+
+.presentational-btn {
+  background-color: $color-primary;
+  border: 1px solid $color-primary-dark;
+  color: $text-color-primary-light;
+  font-weight: bold;
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.transparent-btn {
+  font-weight: bold;
+  color: $color-primary;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid $color-primary;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  &:hover {
+    color: $text-color-primary-light;
+    background-color: $color-primary;
+  }
+}
+
+.default-btn {
+  color: $text-color-primary-dark;
+  background-color: $color-default;
+  border: none;
+  font-size: 0.5em;
+  &:hover {
+    color: $text-color-primary-light;
+    background-color: $color-primary;
+  }
+}
+
+.wrapper {
+  padding: 0 5%;
+  width: 90%;
+}
+
+.main-content {
+  position: relative;
+}
+
+form.green-form {
+  border-radius: 6px;
+  margin: 0 auto;
+  position: relative;
+  fieldset {
+    width: 95%
+  }
+  input[type="text"],
+  input[type="email"] {
+    border: none;
+    background-color: $transparent;
+    color: $text-color-secondary;
+    font-style: italic;
+    font-weight: lighter;
+    outline: none;
+    padding: 0.75em 0 0.75em 1em;
+    width: auto;
+  }
+}
+
+button.fa-button {
+  background-color: $transparent;
+  border: none;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  @include vertically-centered();
+}
+
+.social-media {
+  text-align: center;
+  .fa {
+    color: white;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
+  }
+}
+
+.social-media-item {
+  border-radius: 50%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  &:first-child {
+    padding: 0.5em 1em;
+  }
+}
