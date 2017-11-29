@@ -1,12 +1,12 @@
 #presentation {
-    height: 85vh;
     background: black;
     color: white;
-    text-align: center;
+    height: 85vh;
     position: relative;
+    text-align: center;
     .wrapper {
-        position: absolute;
         @include fully-centered();
+        position: absolute;
         width: inherit;
     }
 }

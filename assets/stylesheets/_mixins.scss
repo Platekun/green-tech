@@ -29,7 +29,7 @@
 }
 
 @mixin green-tech-style() {
+  @include oswald-style();
   font-size: 1.9em;
   text-transform: uppercase;
-  @include oswald-style();
 }

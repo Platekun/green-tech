@@ -1,29 +1,29 @@
 #presentation {
-    .carousel-cell {
-        width: inherit;
-        height: 85vh;
-        background: #8C8;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .carousel-cell:first-child {
-        background-image: url("../img/presentation-carousel-01.jpg");
-    }
-    .carousel-cell:nth-child(2) {
-        background-image: url("../img/presentation-carousel-02.jpg");
-    }
-    .carousel-cell:last-child {
-        background-image: url("../img/presentation-carousel-03.jpg");
-    }
+	.carousel-cell {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background: #8c8;
+		height: 85vh;
+		width: inherit;
+	}
+	.carousel-cell:first-child {
+		background-image: url("../img/presentation-carousel-01.jpg");
+	}
+	.carousel-cell:nth-child(2) {
+		background-image: url("../img/presentation-carousel-02.jpg");
+	}
+	.carousel-cell:last-child {
+		background-image: url("../img/presentation-carousel-03.jpg");
+	}
 }
 
 #useful-info {
-    .carousel-cell {
-        width: inherit;
-        height: 85vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+	.carousel-cell {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 85vh;
+		width: inherit;
+	}
 }

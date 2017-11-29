@@ -33,7 +33,7 @@ a {
 }
 
 q {
-  line-height: 2;
-  color: $text-color-secondary;
   @include open-sans();
+  color: $text-color-secondary;
+  line-height: 2;
 }

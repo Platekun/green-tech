@@ -1,54 +1,54 @@
 #newsletter-offer {
-    font-size: 0.7em;
-    line-height: 2;
-    color: $text-color-secondary;
-    font-weight: lighter;
-    text-align: center;
+	color: $text-color-secondary;
+	font-size: 0.7em;
+	font-weight: lighter;
+	line-height: 2;
+	text-align: center;
 }
 
 #newsletter {
-    padding-top: 1em;
-    h2+p {
-        margin-bottom: 0;
-        font-size: 1.2em;
-        text-align: center;
-        color: white;
-        @include oswald-style();
-    }
-    form {
-        position: relative;
-        width: 60%;
-        max-width: 300px;
-        margin: 0 auto;
-        border: 1px solid $text-color-secondary;
-        background-color: $text-color-primary-dark;
-        border-radius: 5px;
-        fieldset {
-            width: 100%;
-        }
-        input[type="email"] {
-            width: 72%;
-            padding-top: 0.75em;
-            padding-bottom: 0.75em;
-            padding-left: 1em;
-            border: none;
-            font-style: italic;
-            font-weight: lighter;
-            background-color: $transparent;
-            color: $text-color-secondary;
-            outline: none;
-        }
-        button {
-            position: absolute;
-            @include vertically-centered();
-            top: 50%;
-            right: 2%;
-            border: none;
-            background-color: $transparent;
-        }
-        .fa-paper-plane {
-            color: $text-color-secondary;
-            transition: ease all 0.5s;
-        }
-    }
+	padding-top: 1em;
+	h2 + p {
+		@include oswald-style();
+		color: white;
+		font-size: 1.2em;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	form {
+		background-color: $text-color-primary-dark;
+		border-radius: 5px;
+		border: 1px solid $text-color-secondary;
+		margin: 0 auto;
+		max-width: 300px;
+		position: relative;
+		width: 60%;
+		fieldset {
+			width: 100%;
+		}
+		input[type="email"] {
+			background-color: $transparent;
+			border: none;
+			color: $text-color-secondary;
+			font-style: italic;
+			font-weight: lighter;
+			outline: none;
+			padding-bottom: 0.75em;
+			padding-left: 1em;
+			padding-top: 0.75em;
+			width: 72%;
+		}
+		button {
+			@include vertically-centered();
+			background-color: $transparent;
+			border: none;
+			position: absolute;
+			right: 2%;
+			top: 50%;
+		}
+		.fa-paper-plane {
+			color: $text-color-secondary;
+			transition: ease all 0.5s;
+		}
+	}
 }

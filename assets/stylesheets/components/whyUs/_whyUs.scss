@@ -1,22 +1,22 @@
 #why-us {
-    height: 70vh;
-    position: relative;
-    background-color: $color-default;
-    background-image: url("https://livedemo00.template-help.com/wt_60074/images/home-01-1920x600.jpg");
-    background-size: cover;
-    background-position: 40% center;
-    text-align: center;
-    .wrapper {
-        height: 100%;
-        &>div {
-            @include fully-centered();
-            width: inherit;
-        }
-        h2 {
-            margin-top: 0;
-        }
-        p {
-            color: $text-color-secondary;
-        }
-    }
+	background-color: $color-default;
+	background-image: url("https://livedemo00.template-help.com/wt_60074/images/home-01-1920x600.jpg");
+	background-position: 40% center;
+	background-size: cover;
+	height: 70vh;
+	position: relative;
+	text-align: center;
+	.wrapper {
+		height: 100%;
+		& > div {
+			@include fully-centered();
+			width: inherit;
+		}
+		h2 {
+			margin-top: 0;
+		}
+		p {
+			color: $text-color-secondary;
+		}
+	}
 }

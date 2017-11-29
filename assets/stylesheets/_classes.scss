@@ -12,9 +12,9 @@
   border-radius: 25px;
   font-size: 0.8em;
   padding: 1em 2em;
+  text-transform: uppercase;
   -webkit-transition: ease all 0.5s;
   transition: ease all 0.5s;
-  text-transform: uppercase;
 }
 
 .presentational-btn {
@@ -28,26 +28,26 @@
 }
 
 .transparent-btn {
-  font-weight: bold;
-  color: $color-primary;
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid $color-primary;
+  color: $color-primary;
+  font-weight: bold;
   -webkit-transition: ease all 0.5s;
   transition: ease all 0.5s;
   &:hover {
-    color: $text-color-primary-light;
     background-color: $color-primary;
+    color: $text-color-primary-light;
   }
 }
 
 .default-btn {
-  color: $text-color-primary-dark;
   background-color: $color-default;
   border: none;
+  color: $text-color-primary-dark;
   font-size: 0.5em;
   &:hover {
-    color: $text-color-primary-light;
     background-color: $color-primary;
+    color: $text-color-primary-light;
   }
 }
 
@@ -69,8 +69,8 @@ form.green-form {
   }
   input[type="text"],
   input[type="email"] {
-    border: none;
     background-color: $transparent;
+    border: none;
     color: $text-color-secondary;
     font-style: italic;
     font-weight: lighter;
@@ -81,12 +81,12 @@ form.green-form {
 }
 
 button.fa-button {
+  @include vertically-centered();
   background-color: $transparent;
   border: none;
   position: absolute;
   right: 2%;
   top: 50%;
-  @include vertically-centered();
 }
 
 .social-media {
@@ -100,11 +100,11 @@ button.fa-button {
 
 .social-media-item {
   border-radius: 50%;
-  -webkit-box-shadow: none;
+  -webkit-transition: ease all 0.5s;
   box-shadow: none;
   display: inline-block;
   padding: 0.5em 0.8em;
-  -webkit-transition: ease all 0.5s;
+  -webkit-box-shadow: none;
   transition: ease all 0.5s;
   &:first-child {
     padding: 0.5em 1em;
