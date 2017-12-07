@@ -1,0 +1,24 @@
+.social-media {
+  cursor: pointer;
+	text-align: center;
+	& .fa {
+		color: $white;
+		-webkit-transition: ease all $default-transition-time;
+		transition: ease all $default-transition-time;
+  }
+
+  & &__item {
+    border: 1px solid $transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: inline-block;
+    padding: em(8) em(12);
+    -webkit-transition: ease all $default-transition-time;
+    transition: ease all $default-transition-time;
+
+    &:first-child {
+      padding: em(8) em(16);
+    }
+  }
+}

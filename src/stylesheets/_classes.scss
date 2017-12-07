@@ -1,112 +1,18 @@
-.presentational-text {
-  color: $color-primary;
-}
-
-.section-header {
-  font-size: 2em;
-  margin-bottom: 2em;
-  text-transform: uppercase;
-}
-
-.btn {
-  border-radius: 25px;
-  font-size: 0.8em;
-  padding: 1em 2em;
-  text-transform: uppercase;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
-}
-
-.presentational-btn {
-  background-color: $color-primary;
-  border: 1px solid $color-primary-dark;
-  color: $text-color-primary-light;
-  font-weight: bold;
-  &:hover {
-    background-color: $color-primary-dark;
-  }
-}
-
-.transparent-btn {
-  background-color: rgba(0, 0, 0, 0);
-  border: 3px solid $color-primary;
-  color: $color-primary;
-  font-weight: bold;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
-  &:hover {
-    background-color: $color-primary;
-    color: $text-color-primary-light;
-  }
-}
-
-.default-btn {
-  background-color: $color-default;
-  border: none;
-  color: $text-color-primary-dark;
-  font-size: 0.5em;
-  &:hover {
-    background-color: $color-primary;
-    color: $text-color-primary-light;
-  }
-}
-
 .wrapper {
   padding: 0 5%;
   width: 90%;
 }
 
-.main-content {
+.main-layout {
   position: relative;
 }
 
-form.green-form {
-  border-radius: 6px;
-  margin: 0 auto;
-  position: relative;
-  fieldset {
-    width: 95%
-  }
-  input[type="text"],
-  input[type="email"] {
-    background-color: $transparent;
-    border: none;
-    color: $text-color-secondary;
-    font-style: italic;
-    font-weight: lighter;
-    outline: none;
-    padding: 0.75em 0 0.75em 1em;
-    width: auto;
-  }
+.brand-text {
+  color: $primary-color;
 }
 
-button.fa-button {
-  @include vertically-centered();
-  background-color: $transparent;
-  border: none;
-  position: absolute;
-  right: 2%;
-  top: 50%;
-}
-
-.social-media {
-  text-align: center;
-  .fa {
-    color: white;
-    -webkit-transition: ease all 0.5s;
-    transition: ease all 0.5s;
-  }
-}
-
-.social-media-item {
-  border-radius: 50%;
-  -webkit-transition: ease all 0.5s;
-  box-shadow: none;
-  display: inline-block;
-  padding: 0.5em 0.8em;
-  -webkit-box-shadow: none;
-  transition: ease all 0.5s;
-  &:first-child {
-    padding: 0.5em 1em;
-  }
+.brand-title {
+  font-size: $title-font-size;
+  margin-bottom: $title-margin;
+  text-transform: uppercase;
 }

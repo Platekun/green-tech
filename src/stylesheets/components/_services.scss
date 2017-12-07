@@ -1,0 +1,66 @@
+.services {
+  cursor: pointer;
+  height: em(1000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+	& .wrapper {
+    text-align: center;
+	}
+
+  & &__services-list {
+		list-style-type: none;
+		padding-left: 0;
+  }
+
+  & &__service {
+    margin: em(56) 0;
+  }
+
+	& path {
+    fill: $primary-color;
+  }
+
+  & &__title {
+    color: $secondary-text-color;
+    transition: ease all $default-transition-time;
+  }
+
+  & &__service:hover &__title {
+    color: $dark-primary-text-color;
+  }
+
+  @include bp(770) {
+    height: em(600);
+
+    & &__service {
+      display: inline-block;
+			width: 45%;
+    }
+  }
+
+  @include bp(993) {
+    height: $services-section-height;
+
+    & &__service-list {
+      text-align: center;
+    }
+
+    & &__service {
+			display: inline-block;
+			height: em(142);
+			position: relative;
+			vertical-align: top;
+			width: 23%;
+    }
+
+    & &__button {
+			left: 50%;
+			position: absolute;
+			top: 120%;
+			transform: translateX(-50%);
+			width: rem(180);
+    }
+  }
+}

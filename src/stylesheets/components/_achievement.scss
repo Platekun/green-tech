@@ -1,0 +1,27 @@
+.achievement {
+  background-attachment: fixed;
+  background-color: $secondary-text-color;
+  // Make it local
+	background-image: url("../img/parallax-01.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: $achievement-section-height;
+
+  & .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+		height: $full-height;
+    justify-content: center;
+	}
+
+  & &__message {
+		@include OswaldFontFace();
+		color: $white;
+		font-size: 2rem;
+    margin-top: 0;
+    text-align: center;
+		width: $full-height;
+	}
+}

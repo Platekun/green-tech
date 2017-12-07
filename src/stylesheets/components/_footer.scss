@@ -1,0 +1,24 @@
+.footer {
+  padding-bottom: em(32);
+
+  & &--important-text {
+    color: $white;
+  }
+
+  & &--info-text {
+    color: $dark-primary-text-color
+  }
+
+  .social-media {
+		width: $full-width;
+  }
+
+  @include bp(1200) {
+    padding-top: em(32);
+    padding-bottom: 0;
+    .wrapper {
+      display: inline-block;
+      width: 60%;
+    }
+  }
+}

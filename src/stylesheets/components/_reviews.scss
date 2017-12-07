@@ -1,0 +1,88 @@
+.reviews {
+	padding-top: 3em;
+
+  & &__title {
+    @include OswaldFontFace();
+    font-size: em(32);
+		text-align: center;
+	}
+
+  & &__reviews-list {
+    border-top: 1px solid $light-gray;
+  }
+
+  & &__review {
+    line-height: 2;
+  }
+
+  & &__featured-review {
+    text-align: center;
+    margin: em(64) 0;
+  }
+
+  & &__reviewer-profile {
+    color: $secondary-text-color;
+    font-size: em(12);
+    font-style: italic;
+    margin: 0;
+  }
+
+  & &__reviewer-photo {
+    border-radius: 50%;
+
+
+    &--small {
+      width: em(70);
+    }
+  }
+
+  & &__reviewer-info {
+    width: 65%;
+    margin-left: em(5);
+  }
+
+  & &__reviewer-info,
+  & &__reviewer-photo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  & &__reviewer-name {
+    @include OpenSansFontFace();
+    font-size: em(12);
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  & &__quote {
+    @include OpenSansFontFace();
+    border-radius: em(10);
+    border: 1px solid $pale-gray;
+    font-size: em(13);
+    padding: em(20) em(20) em(30) em(20);
+  }
+
+  & &__cite {
+		font-style: normal;
+  }
+
+  @include bp(770) {
+    & &__reviews-list {
+      text-align: center;
+    }
+
+    & &__review {
+      display: inline-block;
+			vertical-align: top;
+			width: 45%;
+    }
+  }
+
+  @include bp(993) {
+    & &__review {
+			display: inline-block;
+			vertical-align: top;
+			width: 30%;
+    }
+  }
+}

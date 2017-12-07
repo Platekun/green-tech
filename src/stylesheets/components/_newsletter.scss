@@ -1,0 +1,63 @@
+.newsletter {
+  padding-top: em(16);
+
+  & &__message {
+    @include OpenSansFontFace();
+    color: $secondary-text-color;
+    font-size: 0.7rem;
+    line-height: 2;
+    margin-bottom: em(8);
+    margin-top: em(8);
+    text-align: center;
+  }
+
+	& &__title {
+		@include OswaldFontFace();
+		color: $white;
+		font-size: em(20);
+		text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+	& &__box {
+		background-color: $dark-primary-text-color;
+		border-radius: 5px;
+		border: 1px solid $secondary-text-color;
+		margin: 0 auto;
+		max-width: 300px;
+		position: relative;
+		width: 60%;
+
+    &-field {
+			width: $full-width;
+		}
+
+    &-input {
+			background-color: transparent;
+			border: none;
+			color: $secondary-text-color;
+			font-style: italic;
+			padding-bottom: em(12);
+			padding-left: em(16);
+			padding-top: em(12);
+			width: 72%;
+      outline: none;
+    }
+
+		&-submit {
+			@include vertically-centered();
+			background-color: transparent;
+      border: none;
+      cursor: pointer;
+			position: absolute;
+			right: 2%;
+			top: 50%;
+    }
+
+		.fa-paper-plane {
+			color: $secondary-text-color;
+			transition: ease all $default-transition-time;
+		}
+	}
+}

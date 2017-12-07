@@ -1,0 +1,60 @@
+.nav-bar {
+  @include OpenSansFontFace();
+	background-color: $primary-color;
+  color: $light-primary-text-color;
+
+  & &__links-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+	& &__item {
+    font-size: em(13);
+		font-weight: bold;
+		padding: em(16);
+		text-align: center;
+		text-transform: uppercase;
+		transition: ease all $default-transition-time;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+    &:hover a {
+			color: $dark-primary-text-color;
+			transition: ease all $default-transition-time;
+		}
+  }
+
+  & &__link {
+    color: $light-primary-text-color;
+  }
+
+  @include bp(479) {
+    & &__links-collection {
+      flex-direction: row;
+    }
+  }
+
+  @include bp(1200) {
+    bottom: em(48);
+    display: inline-block;
+    height: em(572);
+    position: relative;
+    vertical-align: top;
+    width: em(270);
+
+    & &__links-collection {
+      flex-direction: column;
+      width: $full-width;
+    }
+
+    & &__item {
+      display: block;
+      font-size: em(15);
+      margin: rem(20) 0;
+    }
+  }
+}

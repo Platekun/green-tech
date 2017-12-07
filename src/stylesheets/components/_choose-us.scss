@@ -1,0 +1,55 @@
+.choose-us {
+	background-color: $secondary-text-color;
+	background-image: url("../img/home-01-1920x600.jpg");
+	background-position: 40% center;
+	background-size: cover;
+	height: $choose-us-section-height;
+
+	& .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+		height: $full-height;
+    justify-content: center;
+  }
+
+  & &__title {
+    font-size: em(40);
+    margin-top: 0;
+  }
+
+  & &__explanation {
+    @include OpenSansFontFace();
+    color: $dark-primary-text-color;
+    font-size: em(16);
+    text-align: center;
+  }
+
+  @include bp(320) {
+    & &__title {
+      font-size: em(48);
+    }
+
+    & &__explanation {
+      font-size: em(20);
+    }
+  }
+
+  @include bp(750) {
+    & .wrapper {
+      align-items: flex-start;
+      width: 45%;
+    }
+
+    & &__explanation {
+      margin-bottom: em(32);
+      text-align: left;
+    }
+  }
+
+  @include bp(1000) {
+    & &__title {
+      font-size: em(72);
+    }
+  }
+}

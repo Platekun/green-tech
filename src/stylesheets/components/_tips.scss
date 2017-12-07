@@ -1,0 +1,29 @@
+.tips {
+  height: $tips-section-height;
+  padding: em(32) 0 em(80) 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: em(16);
+  }
+
+  & .carousel-cell {
+    width: $full-width;
+  }
+
+  & &__slide-title {
+    margin-bottom: 0;
+  }
+
+  & &__slide-image {
+    border-radius: 15px;
+  }
+
+  & &__slide-text {
+    @include OpenSansFontFace();
+    color: $secondary-text-color;
+    font-size: em(15);
+    line-height: 2;
+    margin-top: em(16);
+  }
+}

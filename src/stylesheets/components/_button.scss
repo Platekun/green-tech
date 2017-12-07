@@ -1,0 +1,58 @@
+.btn {
+  @include OpenSansFontFace();
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: rem(12);
+  font-weight: bold;
+  padding: em(16) em(32);
+  text-transform: uppercase;
+  -webkit-transition: ease all $default-transition-time;
+  transition: ease all $default-transition-time;
+
+  @include bp(450) {
+    font-size: rem(16);
+  }
+}
+
+.btn--primary {
+  background-color: $primary-color;
+  border: 1px solid $dark-primary-color;
+  color: $light-primary-text-color;
+
+  &:hover {
+    background-color: $dark-primary-color;
+  }
+}
+
+.btn--large {
+  display: inline-block;
+  text-align: center;
+  width: rem(130);
+
+  &:hover {
+    background-color: $transparent;
+  }
+}
+
+.btn--negative {
+  background-color: $transparent;
+  border: 3px solid $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $light-primary-text-color;
+  }
+}
+
+.default-btn {
+  background-color: lighten($color: $secondary-text-color, $amount: 25);
+  border: none;
+  color: $dark-primary-text-color;
+  font-size: 0.7rem;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $light-primary-text-color;
+  }
+}

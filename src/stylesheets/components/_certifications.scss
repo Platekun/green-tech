@@ -1,0 +1,10 @@
+.certifications {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  & &__image-container {
+		margin: 0 em(16);
+  }
+}

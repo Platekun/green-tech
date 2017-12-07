@@ -1,7 +1,15 @@
-$color-primary: #5dd39e;
-$color-primary-dark: #3dd39e;
-$text-color-primary-dark: #333;
-$text-color-primary-light: #fff;
-$text-color-secondary: #888;
-$color-default: #eee;
-$transparent: rgba(0, 0, 0, 0)
+$white: white;
+$black: #333;
+$transparent: transparent;
+$neutral-gray: #888;
+$light-gray: #eee;
+$pale-gray: #e5e5e5;
+$aquamarine: #5dd39e;
+$dark-aquamarine: #3dd39e;
+
+$primary-color: $aquamarine;
+$dark-primary-color: $dark-aquamarine;
+$dark-primary-text-color: $black;
+$light-primary-text-color: $white;
+$secondary-text-color: $neutral-gray;
+$quote: $pale-gray;

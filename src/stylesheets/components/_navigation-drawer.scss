@@ -1,0 +1,67 @@
+.navigation-drawer {
+	@include OpenSansFontFace();
+  background: $dark-primary-text-color;
+  box-shadow: 0 0 rem(9) $dark-primary-text-color;
+	height: $navigation-drawer-height;
+	left: 0;
+	margin-left: -100%;
+	margin-top: $app-bar-height;
+  padding-top: $navigation-drawer-padding;
+	position: fixed;
+	top: 0;
+	transition: ease all $default-transition-time;
+	width: $navigation-drawer-width;
+	z-index: $app-bar-z-index;
+
+	& &__search {
+		background-color: $light-primary-text-color;
+		border: 1px solid $secondary-text-color;
+    border-radius: 6px;
+		margin: 0 auto;
+		max-width: 300px;
+		position: relative;
+		width: $almost-full-width;
+  }
+
+  & .fa-search {
+    color: $secondary-text-color;
+  }
+
+  & &__search-btn {
+    @include vertically-centered();
+    background-color: $transparent;
+    border: none;
+    cursor: pointer;
+    right: 2%;
+    top: 50%;
+  }
+
+	& &__search-term {
+		background-color: $transparent;
+		border: none;
+    color: $secondary-text-color;
+		font-style: italic;
+		outline: none;
+		padding: em(12) 0 em(12) em(16);
+		width: auto;
+	}
+
+	& &__category {
+    cursor: pointer;
+    padding: em(16) em(32);
+    transition: ease all $default-transition-time;
+    &:hover {
+      background-color: $primary-color;
+    }
+	}
+
+  & &__subcategory {
+    padding: em(16) em(32) em(16) em(48);
+  }
+
+  & &__link,
+	& &__link:visited,
+	& &__link:hover {
+		color: $light-primary-text-color;
+  }
+}

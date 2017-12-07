@@ -4,11 +4,16 @@ h3,
 h4,
 h5,
 h6 {
-  @include oswald-style();
+  @include OswaldFontFace();
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 main {
-  margin-top: 6em;
+  margin-top: $app-bar-height;
 }
 
 footer {
@@ -33,7 +38,11 @@ a {
 }
 
 q {
-  @include open-sans();
-  color: $text-color-secondary;
+  @include OpenSansFontFace();
+  color: $secondary-text-color;
   line-height: 2;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }

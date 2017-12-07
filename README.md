@@ -1,6 +1,11 @@
-# What is this?
-This page was made as a frontend exercise. It's a fully responsive "replication" of the Green Tech landing page, created from scratch by eye.
+# Purpose
+I made this page as a frontend exercise for my portfolio. It's the Green Tech landing page, created from scratch by eye. It's not a 100% replica but it's close enough.
 
-If you ever want to recompile the scss use `npm run sass`.
+Made with ES2015, Webpack and Sass.
 
-Original Web page: [https://www.templatemonster.com/demo/60074.html](https://www.templatemonster.com/demo/60074.html)
+# Commands
+`npm run build` to rebuild assets.
+
+`npm run build:prod` to deploy.
+
+`npm run clean` if you ever wish to delete `dist/`

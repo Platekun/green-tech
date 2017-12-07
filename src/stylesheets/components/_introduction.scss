@@ -1,0 +1,47 @@
+.introduction {
+	color: $white;
+	height: $introduction-carousel-height;
+  padding-bottom: em(32);
+  position: relative;
+  text-align: center;
+
+	.wrapper {
+		@include fully-centered();
+		width: inherit;
+	}
+
+	& &__slide {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: $primary-color;
+		height: $introduction-carousel-height;
+		width: inherit;
+
+		&:first-child {
+			background-image: url("../img/presentation-carousel-01.jpg");
+		}
+		&:nth-child(2) {
+			background-image: url("../img/presentation-carousel-02.jpg");
+		}
+		&:last-child {
+			background-image: url("../img/presentation-carousel-03.jpg");
+		}
+  }
+
+  & &__text {
+    @include OpenSansFontFace();
+  }
+
+  @include bp(600) {
+    & &__title {
+      font-size: em(48);
+    }
+  }
+
+  @include bp(900) {
+    & &__title {
+      font-size: em(60);
+    }
+  }
+}

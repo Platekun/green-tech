@@ -1,2 +1,4 @@
 .sass-cache/
 author.css.map
+dist
+node_modules

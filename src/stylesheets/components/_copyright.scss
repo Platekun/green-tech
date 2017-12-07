@@ -1,0 +1,7 @@
+.copyright {
+  @include OpenSansFontFace();
+	font-size: em(12);
+  color: $secondary-text-color;
+  margin-top: rem(48);
+  text-align: center;
+}

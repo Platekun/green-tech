@@ -1,0 +1,33 @@
+.stats {
+	@include OpenSansFontFace();
+	background-attachment: fixed;
+	background-size: cover;
+	color: $light-primary-text-color;
+	height: $stats-section-height;
+  align-items: center;
+  background-color: $secondary-text-color;
+  background-image: url("../img/parallax-02.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: em(32) 0;
+  text-align: center;
+
+  & &__message {
+    @include OswaldFontFace();
+    font-size: em(32);
+  }
+
+  @include bp(1200) {
+    & .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    & &__message {
+      font-size: em(48);
+    }
+  }
+}
+

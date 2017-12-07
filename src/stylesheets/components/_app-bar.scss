@@ -1,0 +1,67 @@
+.app-bar {
+  align-items: center;
+	background-color: $white;
+	box-shadow: 0 0 rem(9) $secondary-text-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: em(16);
+  height: $app-bar-height;
+	padding-left: rem(16);
+	position: fixed;
+	top: 0;
+	width: $full-width;
+	z-index: $app-bar-z-index;
+
+	& &__title {
+		display: inline-block;
+    margin: 0 0 0 rem(16);
+	}
+
+	& &__navigation-drawer-toggler {
+		cursor: pointer;
+		transition: ease all $default-transition-time;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	& &__contact {
+    @include OpenSansFontFace();
+    display: none;
+	}
+
+	@include bp(770) {
+		& &__contact {
+			display: block;
+      width: rem(420);
+		}
+
+		& &__phone-number,
+		& &__phone-number:visited,
+		& &__phone-number:hover {
+			color: $white;
+		}
+
+		& .btn--large:hover &__phone-number {
+			color: $primary-color;
+    }
+
+    & .social-media {
+			display: inline-block;
+		}
+
+		& .social-media__item {
+			background-color: $primary-color;
+
+			&:hover {
+				background-color: $transparent;
+				border-color: $primary-color;
+			}
+
+			&:hover .fa {
+				color: $primary-color;
+			}
+		}
+	}
+}
